@@ -17,10 +17,10 @@ char *s;
 void (*f)();
 } identificador;
 
-int _printf(const char *format, ...);
-int string(va_list aux);
-int character(va_list aux);
-int data(va_list aux);
-int integer(va_list aux);
+void _printf(const char *format, ...);
+void string(va_list aux);
+void character(va_list aux);
+void data(va_list aux);
+void integer(va_list aux);
 
 #endif
