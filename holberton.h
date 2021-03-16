@@ -1,7 +1,9 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef PRINTF_H
+#define PRINTF_H
 #include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
+#include <stdarg.h>
 
 /**
  *struct formato - structure
@@ -13,17 +15,12 @@ typedef struct formato
 {
 char *s;
 void (*f)();
-} formatos;
+} identificador;
 
-int _putchar(char c);
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
-void print_all(const char * const format, ...);
-
-void caracter(va_list aux);
-void entero(va_list aux);
-void flotante(va_list aux);
-void linea(va_list aux);
+int _printf(const char *format, ...);
+int string(va_list aux);
+int character(va_list aux);
+int data(va_list aux);
+int integer(va_list aux);
 
 #endif
