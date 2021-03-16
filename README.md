@@ -26,7 +26,7 @@ Write a function that produces output according to a format, also must be capabl
 This project is carried out in order to test the knowledge acquired throughout the months spent at Holberton while seeking to contribute a little more knowledge and experience. In addition to this, develop soft skills in the area of ​​teamwork, collaborative synergy and problem solving along the way.
 
 ## About the Authors
-**Mateo Londoño:** 
+**Mateo Londoño:** Junior developer in process and graduate of electromechanical engineering, lover of technology and software development, with experience in the area of machinery maintenance in the automovile sector. 
 
 **Alexander Cardona:**   
 Junior developer in process, sports coach and passionate about computer science, he studied geological engineering and sports management before finding the opportunity in Holberton where he plans to become an outstanding developer.
@@ -36,5 +36,8 @@ Junior developer in process, sports coach and passionate about computer science,
   
 *This project is made with love and that is why the love of all those people who believe in us converges here*
 - *Luisa cardenas* 
-- *Hernan Dario Cardona* 
-	*... Thanks !*
+- *Hernan Dario Cardona*
+- *Edgar Londoño*
+- *Amparito Urrea*
+
+*... Thanks !*
