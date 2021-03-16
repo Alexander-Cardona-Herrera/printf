@@ -18,7 +18,6 @@ void string(va_list aux)
 		write(1, &n, 1);
 	}
 }
-
 /**
  * character - print a character
  * @aux: Parameters
@@ -27,16 +26,16 @@ void string(va_list aux)
 void character(va_list aux)
 {
 	int z;
-
+	
 	z = va_arg(aux, int);
 	write(1, &z, 1);
 }
 
-/**
+/*
  * data - print an integer
  * @aux: Parameters
  * Return: return an integer that counts what it prints
- */
+
 void data(va_list aux)
 {
 	int z;
@@ -45,11 +44,13 @@ void data(va_list aux)
 	printf("%d", z);
 }
 
-/**
+
  * integer - print an integer
  * @aux: Parameters
  * Return: return an integer that counts what it prints
- */
+ 
 void integer(va_list aux)
 {
 }
+*/
+ 

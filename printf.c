@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 	identificador calls[] = {
 		{"s", string},
 		{"c", character},
-		{"d", data},
-		{"i", integer},
+		/*{"d", data},
+		{"i", integer},*/
 		{NULL, NULL},
 	};
 
@@ -25,13 +25,13 @@ int _printf(const char *format, ...)
 	va_start(aux, format);
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%' && format[i + 1] == 's')
+		if (format[i] == '%' && (format[i + 1] == 's' || format[i + 1] == 'c'))
 		{
-			for (j = 0; imp[j].s != '\0'; j++)
+			for (j = 0; calls[j].s != '\0'; j++)
 			{
-				if (imp[j].s[0] ==  format[i + 1])
+				if (calls[j].s[0] ==  format[i + 1])
 				{
-					imp[j].f(aux);
+					calls[j].f(aux);
 				}
 			}
 		i = i + 2;
@@ -45,4 +45,5 @@ int _printf(const char *format, ...)
 			write(1, &n, 1);
 	}
 	va_end(aux);
+	return (0);
 }

@@ -1,0 +1,36 @@
+NAME
+     _printf  proudece output according to a format
+
+SYNOPSIS
+     _printf FORMAT [ARGUMENT]...
+
+DESCRIPTION
+	
+     The _printf utility allows you to print character, strings, and integers onto the output screen. _printf sends formatted output to stdout.  
+
+     Prints ARGUMENT(s) according to FORMAT.
+
+     %c is the ARGUMENT that the function receives for printing a single character.
+
+     %s is the ARGUMENT that the function receives for printing a hole string.
+
+     %i or %d are the ARGUMENTS that the function receives for printing an integer.
+
+     The function receives the arguments between quotation marks, accompanied or not by additional text, followed by a comma and the variable or c          onstant that the user wants to print.
+
+     The _printf function can receive multiple ARGUMENTS to be printed in the same order in which the ARGUMENTS were entered. The function interpr          ets the identifiers entered within a string, returning the entered values as variables or constants, as long as the user respects the ap              propriate format.
+
+     Until this version, the function does not support other types of impressions other than those mentioned above.
+
+AUTHOR
+
+     Written by Mateo Londoño & Alexander Cardona
+
+HISTORY
+     First version of _printf function
+
+REPORTING BUGS
+     Report _printf bugs to <mateolondono.u@gmail.com>
+          Report printf translation bugs to <mateolondono.u@gmail.com>
+			  
+BSD

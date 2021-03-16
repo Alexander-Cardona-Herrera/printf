@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 
 /**
  *struct formato - structure
@@ -17,7 +18,7 @@ char *s;
 void (*f)();
 } identificador;
 
-void _printf(const char *format, ...);
+int _printf(const char *format, ...);
 void string(va_list aux);
 void character(va_list aux);
 void data(va_list aux);
