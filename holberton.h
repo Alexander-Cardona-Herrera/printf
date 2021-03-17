@@ -1,6 +1,5 @@
 #ifndef PRINTF_H
 #define PRINTF_H
-#include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -19,9 +18,10 @@ void (*f)();
 } identificador;
 
 int _printf(const char *format, ...);
-void string(va_list aux);
-void character(va_list aux);
-void data(va_list aux);
-void integer(va_list aux);
+void string(va_list aux, int *x);
+void character(va_list aux, int *x);
+void integer(va_list aux, int *x);
+int _pow(int x, int y);
+int conteo(int n);
 
 #endif
