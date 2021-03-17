@@ -44,7 +44,6 @@ int _printf(const char *format, ...)
 		write(1, &n, 1);
 		q++;
 	}
-	q = q + 1;
 	va_end(aux);
 	return (*p);
 }
