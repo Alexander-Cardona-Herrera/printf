@@ -4,6 +4,12 @@ NAME
 SYNOPSIS
      _printf FORMAT [ARGUMENT]...
 
+     _printf("%c", 'h');
+
+     _printf("Integer value: %d\n", 1024);
+
+     _printf("%s\n", "Hello world");
+
 DESCRIPTION
 	
      The _printf utility allows you to print character, strings, and integers onto the output screen. _printf sends formatted output to stdout.  
@@ -16,9 +22,9 @@ DESCRIPTION
 
      %i or %d are the ARGUMENTS that the function receives for printing an integer.
 
-     The function receives the arguments between quotation marks, accompanied or not by additional text, followed by a comma and the variable or c          onstant that the user wants to print.
+     The function receives the arguments between quotation marks accompanied or not by additional text, followed by a comma and the variable or co	nstant that the user wants to print.
 
-     The _printf function can receive multiple ARGUMENTS to be printed in the same order in which the ARGUMENTS were entered. The function interpr          ets the identifiers entered within a string, returning the entered values as variables or constants, as long as the user respects the ap              propriate format.
+     The _printf function can receive multiple ARGUMENTS to be printed in the same order in which the ARGUMENTS were entered. The function interpe	ts the identifiers entered within a string, returning the entered values as variables or constants, as long as the user respects the apropri	ate format.
 
      Until this version, the function does not support other types of impressions other than those mentioned above.
 
@@ -32,5 +38,3 @@ HISTORY
 REPORTING BUGS
      Report _printf bugs to <mateolondono.u@gmail.com>
           Report printf translation bugs to <mateolondono.u@gmail.com>
-			  
-BSD
