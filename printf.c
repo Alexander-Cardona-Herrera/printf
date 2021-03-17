@@ -8,11 +8,8 @@
 
 int _printf(const char *format, ...)
 {
-	int i, j, n, q;
+	int i, j, n, q = 1;
 	int *p;
-
-	q = 0;
-	p = &q;
 
 	identificador calls[] = {
 		{"s", string},
@@ -26,12 +23,14 @@ int _printf(const char *format, ...)
 
 	va_start(aux, format);
 
+	p = &q;
+
 	if (format == NULL)
 		return (-1);
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%' && (format[i + 1] == 's' || format[i + 1] == 'c' 
+		if (format[i] == '%' && (format[i + 1] == 's' || format[i + 1] == 'c'
 			|| format[i + 1] == 'd' || format[i + 1] == 'i'))
 		{
 			for (j = 0; calls[j].s != NULL; j++)
