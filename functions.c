@@ -11,8 +11,14 @@ void string(va_list aux, int *x)
 	int i, n;
 	char *z;
 
-	z = va_arg(aux, char*);
-
+	if (va_arg(aux, char*) == NULL)
+	{
+		z = "(null)";
+	}
+	else
+	{
+		z = va_arg(aux, char*);
+	}
 	for (i = 0; z[i] != '\0'; i++)
 	{
 		n = z[i];
