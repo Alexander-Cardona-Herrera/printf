@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, j, n, q = 1;
+	int i, j, n, q = 0;
 	int *p;
 
 	identificador calls[] = {
