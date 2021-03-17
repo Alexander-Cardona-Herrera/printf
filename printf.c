@@ -31,14 +31,13 @@ int _printf(const char *format, ...)
 
 	for (i = 0; format[i] != '\0'; i++)
 	{
-		if (format[i] == '%' && (format[i + 1] == 's' || format[i + 1] == 'c' || format[i + 1] == 'd' || format[i + 1] == 'i'))
+		if (format[i] == '%' && (format[i + 1] == 's' || format[i + 1] == 'c' 
+			|| format[i + 1] == 'd' || format[i + 1] == 'i'))
 		{
 			for (j = 0; calls[j].s != NULL; j++)
 			{
 				if (calls[j].s[0] ==  format[i + 1])
-				{
 					calls[j].f(aux);
-				}
 			}
 		i = i + 2;
 		}
@@ -47,6 +46,5 @@ int _printf(const char *format, ...)
 		q++;
 	}
 	va_end(aux);
-
 	return (*p);
 }
