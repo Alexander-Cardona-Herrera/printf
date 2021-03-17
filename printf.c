@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 			for (j = 0; calls[j].s != NULL; j++)
 			{
 				if (calls[j].s[0] ==  format[i + 1])
-					calls[j].f(aux);
+					calls[j].f(aux, p);
 			}
 		i = i + 2;
 		}
